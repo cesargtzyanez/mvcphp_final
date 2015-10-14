@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{theTitle}</title>
+</head>
+
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M83XXV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M83XXV');</script>
+<!-- End Google Tag Manager -->
+
+	<h1>{h1Title}</h1>
+    <h2>{h2Message}</h2>
+    
+    <a href="https://github.com/cesargtzyanez/mvcphp_final">Código del Proyecto</a>
+    <br>
+    
+    <a href="index.php?v=addUser">Agregar Usuario</a>
+    <br>
+    
+    <form action="index.php?v=find" method="get">
+    	Buscar usuariox: <input type="text" id="hint" name="hint"> <input type="submit" value="Buscar!">
+    </form>
+    
+    <table border="1">
+    	<tr id="tablelHeader">
+        	<td>&nbsp;</td>
+            <td>Apellidos</td>
+            <td>Nombre</td>
+            <td>Email</td>
+            <td>Editar</td>
+            <td>Eliminar</td>
+        </tr>
+        
+        {newrows}
+        
+    </table>
+    
+</body>
+</html>
